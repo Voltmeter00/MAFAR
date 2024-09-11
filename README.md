@@ -2,7 +2,7 @@
 MAFAR Dataset is a sound event dataset labelled by 10 professional annotators, containing 10 sets of label results.
 All the data and labels can be downloaded in: https://drive.google.com/file/d/1bNffdNqpWpDMlu7SDFOzwHo2IUCzF9r6/view?usp=share_link
 
-This repository contains the necessary files and scripts to replicate the results of the paper "Exploring Differences between Human Perception and Model Inference in Audio Event Recognition".(https://arxiv.org/abs/2409.06580)
+This repository contains the necessary files and scripts to replicate the results of the paper **"Exploring Differences between Human Perception and Model Inference in Audio Event Recognition"**.(https://arxiv.org/abs/2409.06580)
 
 ## Dataset Contents
 - **raw_data**: Unprocessed data labeled by 10 professional annotators.
