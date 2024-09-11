@@ -1,11 +1,7 @@
-import os
-from platform import machine
 import csv
 import numpy as np
 import json
 import matplotlib.pyplot as plt
-from holoviews.plotting.bokeh.styles import font_size
-from sphinx.addnodes import index
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 test_file = ['DJI_20231202102104_0001_D.npy', 'DJI_20231203012836_0002_D.npy', 'DJI_20231203015158_0003_D.npy', 'DJI_20231203015646_0004_D.npy', 'DJI_20231203020240_0005_D.npy', 'DJI_20231203022232_0006_D.npy', 'DJI_20231203025216_0007_D.npy', 'DJI_20231203051423_0008_D.npy', 'DJI_20231203051949_0009_D.npy', 'DJI_20231203052327_0010_D.npy', 'DJI_20231212164538_0038_D.npy', 'DJI_20231214154115_0040_D.npy', 'DJI_20231214175432_0041_D.npy', 'DJI_20231216095837_0042_D.npy', 'DJI_20231216100845_0043_D.npy', 'DJI_20231216164512_0044_D.npy', 'DJI_20231216165534_0045_D.npy', 'DJI_20231216174224_0046_D.npy', 'DJI_20231216175753_0047_D.npy', 'DJI_20231216180413_0048_D.npy', 'DJI_20231216181520_0049_D.npy', 'DJI_20231216184838_0050_D.npy', 'DJI_20231216200711_0052_D.npy', 'DJI_20231216201917_0053_D.npy', 'DJI_20231217123556_0054_D.npy']
 print(len(test_file))
@@ -23,8 +19,6 @@ with open('class_labels_indices.csv', 'r') as file:
     for row in csvreader:
         label2text.append(row[2])
 
-# print(label2text)
-# print(len(label2text))
 
 def kl_divergence(p, q):
     return np.sum(p * (np.log(p + 1e-8) - np.log(q + 1e-8)), axis=1)

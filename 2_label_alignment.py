@@ -1,10 +1,7 @@
 import os
-from platform import machine
-
 import numpy as np
 import json
 import csv
-from numpy.ma.core import zeros_like
 
 num_labeller = 10
 
